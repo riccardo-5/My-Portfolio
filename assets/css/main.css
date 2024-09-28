@@ -1519,10 +1519,13 @@ body.loaded {
   overflow: hidden;
 }
 .popup_modal_img img {
-  height: 100%;
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 8px;
+  max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+  max-height: 100%;
 }
 .popup_modal_content {
   background-color: var(--tj-white);
